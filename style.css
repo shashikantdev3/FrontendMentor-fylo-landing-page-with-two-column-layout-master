@@ -264,3 +264,11 @@ footer.flex-item{
 footer{
     background-color: var(--clr-very-dark-blue);
 }
+
+.footer-col-2.flex-item{
+    flex-direction: column;
+}
+
+.footer-col-3.flex-item{
+    flex-direction: column;
+}
