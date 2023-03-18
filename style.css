@@ -1,0 +1,266 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application BUT this cause problem to mobile layout if you give max-width in pixel. So better comment it.
+  */
+  html, body {
+    /* height: 100%;  */
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+/* Custom Properties */
+:root{
+
+    /* primary */
+    --clr-very-dark-blue : hsl(243, 87%, 12%);
+    --clr-desaturated-blue :  hsl(238, 22%, 44%);
+
+    /* accent */
+    --clr-bright-blue : hsl(224, 93%, 58%);
+    --clr-moderate-cyan : hsl(170, 45%, 43%);
+    
+    /* neutral */
+    --clr-light-grayish-blue: hsl(240, 75%, 98%);
+    --clr-light-grey : hsl(0, 0%, 75%);
+
+    /* Font size */
+    --fs: 1rem;
+
+    /* Font family */
+    /* accent */
+    --ff-accent: 'Outfit', sans-serif;
+    /* neutral on whole body */
+    --ff-neutral: 'Open Sans', sans-serif;
+}
+
+/* General Styling */
+body{
+  font-family:var(--ff-neutral);
+  font-size: var(--fs);
+  background-color: var(--clr-grayish-blue);
+  line-height: 1.5;
+}
+
+main,
+footer{
+    max-width: 375px;
+    border: 1px solid red;
+}
+
+.flex-item{
+    display: flex;
+}
+
+.fylo__header-logo{
+    width: 6rem;
+}
+
+.fylo__header,
+.fylo__hero-text,
+.fylo__article{
+    padding: 2rem 1rem;
+}
+
+.fylo__header.flex-item{
+    justify-content: space-between;
+}
+
+.fylo__header-text.flex-item{
+    gap: 1rem;
+}
+
+.fylo__header-text__features,
+.fylo__header-text__team,
+.fylo__header-text__signin{
+    gap: 1rem;
+    text-decoration: none;
+
+}
+
+.fylo__hero.flex-item{
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.fylo__hero-illustrator-1{
+    padding: 2rem;
+}
+
+.fylo__hero-text{
+    text-align: center;
+}
+
+.fylo__hero-text__title{
+    font-size: 1.5rem;
+    font-family: var(--ff-accent);
+    color: var(--clr-very-dark-blue);
+}
+
+.fylo__hero-text__description{
+    padding: 1rem 0;
+    color: var(--clr-desaturated-blue);
+}
+
+.hero-input.flex-item{
+    flex-direction: column;
+}
+
+input[type=email]{
+    width: 100%;
+    padding: 0.4rem 1rem;
+}
+
+.fylo__hero-text__get-started__button{
+    margin-top: 1rem;
+    padding: 0.5rem 7.75rem;
+    border: 0;
+    background-color: var(--clr-bright-blue);
+    color: white;
+    font-family: var(--ff-accent);
+}
+
+.fylo__article.flex-item{
+    flex-direction: column;
+}
+
+.fylo__article-illustraror-2{
+    padding: 2rem 0;
+}
+
+.fylo__article-title{
+    padding: 2rem 0;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--clr-grayish-blue);
+    font-family: var(--ff-accent);
+}
+
+.fylo__article-description{
+    padding: 0.75rem 0;
+    font-size: 0.92rem;
+    color: var(--clr-light-grey);
+}
+
+.how-fylo-works-link.flex-item{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.25rem;
+}
+
+.how-fylo-works-anchor{
+    color: var(--clr-moderate-cyan);
+    text-decoration: none;
+}
+
+hr{
+    max-width: 50%;
+    margin-left: 24%;
+    margin-bottom: 12%;
+    border: 1px solid var(--clr-moderate-cyan);
+}
+
+.testimonial{
+    border: 1px solid red;
+    margin: 5%;
+    padding: 1.5rem;
+}
+
+.testimonial > *{
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+    font-family: var(--ff-accent);
+}
+
+.about-person {
+    max-height: 3rem;
+    gap: 1rem;
+}
+
+.about-person>img{
+    max-width: 3rem;
+    border-radius: 3rem;
+}
+
+.testimonial-text{
+    padding-top: 0.5rem;
+}
+
+.subscribe-mail{
+    background-color: var(--clr-desaturated-blue);
+}
+
+.subscribe-mail.flex-item{
+    flex-direction: column;
+}
+
+.subscribe-mail{
+    color: white;
+    padding: 4rem 2.5rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+.get-early-access-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.get-early-access-description{
+    font-size: 0.9rem;
+}
+
+.get-started-for-free{
+    margin-top: 1rem;
+    padding: 0.5rem 4.5rem;
+    border: 0;
+    background-color: var(--clr-bright-blue);
+    color: white;
+    font-family: var(--ff-accent);
+}
+
+footer.flex-item{
+    flex-direction: column;
+}
+
+footer{
+    background-color: var(--clr-very-dark-blue);
+}
