@@ -263,6 +263,7 @@ footer.flex-item{
 
 footer{
     background-color: var(--clr-very-dark-blue);
+    padding: 2rem;
 }
 
 .footer-col-2.flex-item{
@@ -272,3 +273,4 @@ footer{
 .footer-col-3.flex-item{
     flex-direction: column;
 }
+
