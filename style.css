@@ -166,6 +166,19 @@ input[type=email]{
     cursor: pointer;
 }
 
+.curved{
+    width: 100%;
+    background-image: url(./images/bg-curve-mobile.svg);
+    background-size: cover;
+    background-position: top center;
+    height: 8vh;
+}
+
+
+.fylo__article{
+    background-color: var(--clr-light-grayish-blue);
+}
+
 .fylo__article.flex-item{
     flex-direction: column;
 }
@@ -310,11 +323,6 @@ footer{
     flex-direction: column;
 }
 
-.phone.flex-item
-{
-
-}
-
 .phone>img{
     max-width: 8%;
 }
@@ -418,6 +426,15 @@ footer{
     .fylo__hero-text__email_input{
         flex-basis: 60%;
     }
+
+    .curved{
+        width: 100%;
+        background-image: url(./images/bg-curve-desktop.svg);
+        background-size: cover;
+        background-position: top center;
+        height: 114px;
+    }
+    
 
     .fylo__article-illustraror-2 {
         flex-basis: 50%;
