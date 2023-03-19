@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My Solution](https://github.com/shashikantdev3/FrontendMentor-fylo-landing-page-with-two-column-layout-master)
+- Live Site URL: [Live Preview](https://shashikantdev3.github.io/FrontendMentor-fylo-landing-page-with-two-column-layout-master/)
 
 ## My process
 
@@ -48,5 +48,5 @@ Users should be able to:
 ## Author
 
 - Website - [Shashikant Dev](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@shashikantdev3](https://www.frontendmentor.io/profile/shashikantdev3)
+- Twitter - [@shashikantdev3](https://www.twitter.com/shashikantdev3)
