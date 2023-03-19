@@ -76,12 +76,13 @@ body{
   font-size: var(--fs);
   background-color: var(--clr-grayish-blue);
   line-height: 1.5;
+  display: grid;
+  place-content: center;
 }
 
 main,
 footer{
     max-width: 375px;
-    border: 1px solid red;
 }
 
 .flex-item{
@@ -100,6 +101,10 @@ footer{
 
 .fylo__header.flex-item{
     justify-content: space-between;
+}
+
+.fylo__header-text>a{
+    color: var(--clr-desaturated-blue);
 }
 
 .fylo__header-text.flex-item{
@@ -156,8 +161,26 @@ input[type=email]{
     font-family: var(--ff-accent);
 }
 
+.fylo__hero-text__get-started__button:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.curved{
+    background-image: url(./images/bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 4vh;
+}
+
 .fylo__article.flex-item{
     flex-direction: column;
+}
+
+.fylo__article{
+    background-color: var(--clr-light-grayish-blue);
 }
 
 .fylo__article-illustraror-2{
@@ -199,9 +222,11 @@ hr{
 }
 
 .testimonial{
-    border: 1px solid red;
     margin: 5%;
     padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 2px 0 11px 0 rgba(0,0,0,0.5);
 }
 
 .testimonial > *{
@@ -257,20 +282,294 @@ hr{
     font-family: var(--ff-accent);
 }
 
+.get-started-for-free:hover{
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+::placeholder
+{
+    color: rgb(122, 116, 116);
+}
+
 footer.flex-item{
     flex-direction: column;
+    gap: 1rem;
 }
 
 footer{
     background-color: var(--clr-very-dark-blue);
     padding: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-text.flex-item{
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .footer-col-2.flex-item{
     flex-direction: column;
+    gap: 1rem;
 }
 
 .footer-col-3.flex-item{
     flex-direction: column;
+    gap: 1rem;
 }
 
+
+.footer-col-1,
+.footer-col-2{
+    padding: 1rem 0;
+    flex-direction: column;
+}
+
+.phone.flex-item
+{
+
+}
+
+.phone>img{
+    max-width: 8%;
+}
+
+.footer-col-2>a,
+.footer-col-3>a{
+    text-decoration: none;
+    color: white;
+}
+
+.email{
+    padding: 1rem 0;
+}
+
+.phone>img,
+.email>img{
+    margin-right: 1rem;
+}
+
+.social{
+    display: flex;
+    height: 3rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+
+
+.facebook>svg {
+    height: 1.5rem;
+    width: 2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.twitter>svg{
+    height: 1.5rem;
+    width: 1.9rem;
+    margin-top: 0.5rem;
+    margin-left: 5px;
+}
+
+.instagram>svg {
+    height: 1.6rem;
+    width: 2rem;
+    margin-top: 7px;
+    margin-left: 6px;
+}
+
+.social-icon{
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 2px solid white;
+    color: white;
+    fill: white;
+    border-radius: 2.5rem;
+}
+
+.social:hover{
+    cursor: pointer;
+}
+
+.social-icon:hover{
+    color: var(--clr-moderate-cyan);
+    fill: var(--clr-moderate-cyan);
+    border: 2px solid var(--clr-moderate-cyan);
+}
+
+.subscribe.flex-item{
+    flex-direction: column;
+}
+
+@media (min-width: 40rem){
+    main,
+    footer{
+        min-width: 1440px;
+    }
+
+    .fylo__header-logo{
+        width: 9rem;
+    }
+
+    .fylo__hero.flex-item {
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+
+    .fylo__hero-text__title {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .fylo__hero-text__description {
+        font-size: 1.35rem;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    .fylo__hero-text__email_input{
+        flex-basis: 60%;
+    }
+
+    .curved{
+        background-image: url(./images/bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        width: 100%;
+        height: 114px;
+    }
+
+    .fylo__article-illustraror-2 {
+        flex-basis: 50%;
+    }
+
+    .fylo-article-text{
+        text-align: left;
+    }
+
+    .fylo__article-title {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    .fylo__hero-text__get-started__button {
+        margin-top: 0rem;
+        margin-left: 1rem;
+        padding: 0.5rem 5rem;
+    }
+
+    .fylo__article-illustraror-2 {
+        padding-top: 3rem;
+        flex-basis: 75%;
+    }
+
+    .fylo__article-description {
+        padding: 0.5rem 1rem 0 0;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: black;
+    }
+
+    hr {
+        max-width: 20%;
+        margin-left: 0%;
+    }
+
+    .testimonial {
+        box-shadow: 2px 0 11px 0 rgba(0,0,0,0.5);
+        margin: 0;
+        padding: 1.5rem;
+        max-width: 50%;
+
+    }
+
+    .testimonial-description{
+        font-size: 0.9rem;
+    }
+
+    .how-fylo-works-link.flex-item {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .fylo__header,
+    .fylo__hero-text,
+    .fylo__article{
+        padding: 4rem;
+    }
+    .fylo__header-text.flex-item {
+        gap: 3rem;
+    }
+    .fylo__hero.flex-item{
+        flex-direction: row-reverse;
+    }
+
+    .hero-input.flex-item{
+        flex-direction: row;
+    }
+
+    .fylo__hero-text__get-started__button {
+        margin-top: 0rem;
+        margin-left: 1rem;
+    }
+
+    .fylo__article.flex-item{
+        flex-direction: row-reverse;
+    }
+
+    .subscribe-mail.flex-item{
+        flex-direction: row;
+    }
+
+    footer{
+        padding: 5rem;
+    }
+
+    .footer-text{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 12rem;
+    }
+    .footer-col-3{
+        padding: 1rem 0;
+    }
+    .get-early-access{
+        max-width: 55%;
+        padding: 0rem 5rem;
+        text-align: left;
+    }
+    .get-early-access-title{
+        padding: 0 0 1rem 0;
+        font-size: 2rem;
+    }
+
+    .get-early-access-description {
+        font-size: 0.9rem;
+        max-width: 75%;
+    }
+
+    .subscribe.flex-item{
+        flex-direction: column;
+    }
+
+    input[type=email] {
+        width: 100%;
+        padding: 0.4rem 15rem 0.4rem 1rem;
+    }
+
+    .get-started-for-free {
+        max-width: 45%;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .footer-text.flex-item{
+        flex-direction: row;
+        gap: 1rem;
+    }
+   
+
+}
